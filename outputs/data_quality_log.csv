@@ -1,0 +1,11 @@
+issue,rows_affected,action_taken,reason,remaining_risk
+Invalid age values,2,Converted to numeric and set invalid values to NaN,Ages must be numeric and within a valid range,Missing ages may affect age-based analysis
+Income stored as text/currency format,1,Removed currency symbols and converted to numeric,Income analysis requires numeric values,Some income values may still be inaccurate
+Negative household income,1,Flagged/replaced invalid value with NaN,Income cannot be negative,True income value is unknown
+Invalid staff_count value,1,Converted to numeric; invalid value became NaN,Staff counts must be numeric,True staff count is unknown
+Negative monthly_capacity,1,Flagged/replaced invalid value with NaN,Centre capacity cannot be negative,True capacity is unknown
+Duplicate resident_id,1,Investigated and removed/flagged duplicate record,Primary keys should be unique,Potential uncertainty about correct duplicate record
+Missing resident name,1,Retained record and flagged missing value,Avoid unnecessary data loss,Missing name cannot be recovered
+Missing municipality,1,Retained record and flagged missing value,Avoid unnecessary data loss,Municipality remains unknown
+Inconsistent province names,1,Standardized to 'Western Cape',Ensure category consistency,Other undiscovered spelling variations may exist
+Inconsistent language labels,1,Standardized to 'isiZulu',Ensure category consistency,Other undiscovered language variations may exist

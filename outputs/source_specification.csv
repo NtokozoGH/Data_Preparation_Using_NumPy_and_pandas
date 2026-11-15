@@ -1,0 +1,4 @@
+dataset,format,one_row_represents,primary_key,foreign_key,purpose,possible_limitation
+service_requests_raw.csv,CSV,Complete this,Complete this,Complete this,Complete this,Complete this
+resident_profiles_raw.csv,CSV,Complete this,Complete this,None,Complete this,Complete this
+service_centres_raw.json,JSON,Complete this,Complete this,Complete this,Complete this,Complete this
